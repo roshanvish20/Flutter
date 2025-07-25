@@ -29,6 +29,7 @@ You write code once in Dart, and Flutter converts it for all platforms. 💡
 | 💎 Beautiful UI               | Easily make modern, stylish apps like Netflix, Spotify, etc.                                   |
 | 🌍 One codebase               | Write once, run on Android, iOS, Web, and more.                                                |
 | 🧠 Dart Language              | You already know it — big advantage!                                                           |
+|  Increased time to market-place | Using single code base for all the platform like, app, web.
 
 
 ### What is a Widget?
@@ -59,6 +60,7 @@ You combine them like a puzzle to build the UI.
 /*
 
 ### How Flutter is Better:
+
 ✅ 1. One Codebase for Everything
 You write code once in Dart → it works on:
 - Android 📱
