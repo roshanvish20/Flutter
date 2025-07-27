@@ -1,8 +1,6 @@
 /*
 
-### What is Flutter?
-In simple words:
-
+### What is Flutter
 Flutter is a tool (framework) created by Google that helps you build beautiful apps for mobile, web, desktop, and more — 
 using just one programming language: Dart.
 
