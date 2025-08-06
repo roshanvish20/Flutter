@@ -80,9 +80,7 @@ House
        └── Bed
 UI works the same way:
 
-mathematica
-Copy
-Edit
+
 Scaffold
  ├── AppBar
  └── Body
