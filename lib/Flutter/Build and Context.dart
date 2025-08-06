@@ -127,8 +127,8 @@ Because:
 Theme A (red)
 │
 ├── Column
-│   ├── Theme B (green)
-│   │   └── Text("green") → picks green ✅
+│   |  ├── Theme B (green)
+│   │    └── Text("green") → picks green ✅
 │   └── Text("red")       → picks red ✅
 
 ✅ Summary:
@@ -180,8 +180,9 @@ But by default, and in almost every Flutter project, we call it context.
  */
 
 
-/*
 
+
+/*
 ✅ What you already know (and it’s correct):
 | Part           | Meaning                                                |
 | -------------- | ------------------------------------------------------ |
@@ -307,7 +308,7 @@ In Code 2:
 🤔 Why do we need it?
 Because:
 initState() runs before the widget is fully drawn.
-- But many things like showDialog(), Navigator.push(), Theme.of(context), etc. need the widget to be on screen (i.e. "in the tree") to work correctly.
+- But many things like showDialog(),Navigator.push(),Theme.of(context),etc. need the widget to be on screen(i.e. "in the tree") to work correctly.
 - So, we use addPostFrameCallback to say:
 - “Hey Flutter, after you're done drawing everything (the first frame), then run this code.”
 

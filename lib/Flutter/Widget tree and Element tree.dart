@@ -271,7 +271,7 @@ Flutter’s Element Tree and Render Tree get updated to reflect this.
 
 
 
-??? Q7. creates Element?? Means and why does it mean by every widget widget has element. 
+??? Q7. creates Element?? Means and why does it mean by every widget has element. 
    And how does rebuild happens what is code and all.
 
 
@@ -319,7 +319,7 @@ Usually triggered by:
 
 
 
-??? Q8.And I used colum from top to bottom in left side and now I want to use row so it s going to start from ??
+??? Q8.And If I used column from top to bottom in left side and now I want to use row so where it s going to start from ??
 
 
 🔹 Column → lays widgets vertically (top to bottom).
