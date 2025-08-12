@@ -378,3 +378,39 @@ Example:
 - Switching tabs manually
 
  */
+
+/*
+### Q1. Why we use Override method here? And we don't use then?
+
+Why @override is used here
+@override means:
+“I am overriding a method from the parent class.”
+- Here, StatelessWidget already has a method named build(BuildContext context).
+
+You must override it because:
+- That’s where you describe what the widget looks like.
+- Without overriding it, Flutter wouldn’t know what to draw.
+
+So:
+@override
+Widget build(BuildContext context) {
+  return Container(); // Your UI here
+}
+is basically your own version of the build method.
+
+
+1.In a StatelessWidget, the build(BuildContext context) method is where you describe what the widget should look like.
+2.If you don’t override it, then the widget will just inherit the default behavior from the StatelessWidget class — and in that class, 
+the default build() method simply throws an error saying:
+
+"StatelessWidget.build() is not implemented."
+
+3.That’s because StatelessWidget is an abstract class — it’s like a blueprint. 
+Flutter doesn’t know what UI to draw unless you tell it by overriding build().
+4. So there is no default look — without build(), your widget can’t render anything at all.
+
+It’s like saying:
+“Here’s a canvas. What do you want me to draw?”
+If you don’t answer, Flutter just says “Well… I can’t draw anything, so error!"
+
+ */
