@@ -290,8 +290,6 @@ and only use StatefulWidget when necessary — where something must change/react
 
  */
 
-
-
 /*
 ### Stateless and Stateful (Quick Recap):
 
@@ -377,6 +375,14 @@ Example:
 - Toggling dark mode
 - Switching tabs manually
 
+6. When to use child:
+child: means "put another widget inside me."
+
+Example:
+Center(
+  child: Text("Hello"), // Center is just positioning, so we give it a child
+)
+You usually use child when you want layout or positioning, not for color.
  */
 
 /*
@@ -413,4 +419,60 @@ It’s like saying:
 “Here’s a canvas. What do you want me to draw?”
 If you don’t answer, Flutter just says “Well… I can’t draw anything, so error!"
 
+
  */
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(
+            child: Text(
+              "Text with Yellow Background",
+              style: TextStyle(
+                backgroundColor: Colors.amber,
+                color: Colors.black,
+                fontSize: 13,
+              ),
+            ),
+          ),
+        ),
+        body: Center(
+          child: Container(
+            padding: EdgeInsets.all(10),
+            color: Colors.blue,
+            child: Text(
+              "Hello Flutter",
+              style: TextStyle(
+                backgroundColor: Colors.yellow,
+                color: Colors.red,
+                fontSize: 17,
+              ),
+            ),
+          ),
+        ),
+        bottomNavigationBar: BottomAppBar(
+          child: Center(
+            child: Text(
+              "Navigation Through Here",
+              style: TextStyle(
+                backgroundColor: Colors.yellow,
+                color: Colors.red,
+                fontSize: 13,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

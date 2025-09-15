@@ -14,18 +14,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false, // removes the deflaut debig icon
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Stateless Widget Example"),
+         backgroundColor: Colors.yellow,
+        appBar:AppBar(
+           backgroundColor: Colors.blue,
+         title: Text("Stateless Widget Example"),
         ),
+       
         body: Center(
-          child: Text("Hello, Flutter!"),
+          child: Text("Hello, Flutter!", style: TextStyle(color: Colors.red),),
         ),
         //bottom color
         bottomNavigationBar: BottomAppBar(
           color: Colors.grey,
           child: Center(child: Text("Navigations"),),
-        ),
+        ),        
       ),
+     
+      
     );
   }
 }
